@@ -67,3 +67,12 @@ dispatch_async(dispatch_get_global_queue(<#dispatch_queue_priority_t priority#>,
     NSLog(@"%s", __PRETTY_FUNCTION__);
 }
 ```
+
+##NSNotifications Remove Observer
+> csRemoveObserver
+
+```objective-c
+[[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:<#notification name#>;
+                                                  object:nil];
+```
