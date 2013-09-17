@@ -2,12 +2,14 @@ XCodeSnippets
 =============
 
 ##Weak Self
+> csWeakSelf
 
 ```objective-c
 __weak typeof(self)weakSelf = self;
 ```
 
 ##Singleton
+> csSingleton
 
 ```objective-c
 + (instancetype)shared<#name#> {
@@ -22,18 +24,21 @@ __weak typeof(self)weakSelf = self;
 ```
 
 ##Log String
+> csLogString
 
 ```objective-c
 NSLog(@"%@", <#string#>);
 ```
 
 ##Log Pretty Function
+> csLogFunction
 
 ```objective-c
 NSLog(@"%s", __PRETTY_FUNCTION__);
 ```
 
 ##Log Call Stack Symbols
+> csLogCallStackSymbols
 
 ```objective-c
 NSLog(@"Call Stack: %@", [NSThread callStackSymbols]);
@@ -41,6 +46,7 @@ NSLog(@"Call Stack: %@", [NSThread callStackSymbols]);
 
 
 ##Dispatch Async
+> csDispatchAsync
 
 ```objective-c
 dispatch_async(dispatch_get_global_queue(<#dispatch_queue_priority_t priority#>, <#unsigned long flags#>), ^(void) {
@@ -53,6 +59,7 @@ dispatch_async(dispatch_get_global_queue(<#dispatch_queue_priority_t priority#>,
 ```
 
 ##ARC Dealloc
+> csDealloc
 
 ```objective-c
 - (void)dealloc
