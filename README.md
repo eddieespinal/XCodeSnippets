@@ -76,3 +76,29 @@ dispatch_async(dispatch_get_global_queue(<#dispatch_queue_priority_t priority#>,
                                                     name:<#notification name#>;
                                                   object:nil];
 ```
+
+##Log Boolean Value
+> cslogBooleanValue
+
+```objective-c
+NSLog(@"%@", (<#Boolean Variable#>) ? @"YES" : @"NO");
+```
+
+##iOS7 Attributed String
+> csAttributedString
+
+```objective-c
+NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:<#label.text#>];
+            NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+            [paragraphStyle setLineSpacing:<#4.0#>];
+            [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [<#label.text#> length])];
+            <#label#>.attributedText = attributedString;
+            [detailLabel sizeToFit];
+```
+
+##Static Constant NSString
+> csStaticConstantString
+
+```objective-c
+static NSString * const <#kContantName#> = @"<#value#>";
+```
